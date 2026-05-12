@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Vital | Antonio Rosado Jr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Biblioteca Vital</h1>
+            <p class="tagline">Transformando complexidade em clareza</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="intro">
+            <h2>Sobre o Autor</h2>
+            <p>Antonio Rosado Jr atua na interseção entre finanças, governança e estruturação de sistemas.</p>
+        </section>
+        <section class="books">
+            <h2>Livros Publicados</h2>
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="images/quando-o-corpo-grita-cover.jpg" alt="Quando o Corpo Grita">
+                </div>
+                <div class="book-info">
+                    <h3>Quando o Corpo Grita</h3>
+                    <p class="book-subtitle">Entendendo os sinais que você ignora</p>
+                    <div class="book-actions">
+                        <a href="https://www.amazon.com.br/dp/YOUR_ASIN" class="btn btn-primary">Comprar na Amazon</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Antonio Rosado Jr</p>
+    </footer>
+</body>
+</html>
