@@ -1,0 +1,12 @@
+﻿* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+header { background: linear-gradient(135deg, #003d5c, #007ba7); color: white; padding: 60px 0; text-align: center; }
+h1 { font-size: 3rem; margin-bottom: 10px; }
+.tagline { font-size: 1.2rem; }
+section { margin: 40px 0; }
+.book-card { display: flex; gap: 30px; padding: 30px; background: #f8f9fa; border-radius: 8px; }
+.book-cover img { width: 200px; height: auto; border-radius: 8px; }
+.btn { display: inline-block; padding: 12px 24px; background: #003d5c; color: white; text-decoration: none; border-radius: 6px; }
+.btn:hover { background: #007ba7; }
+footer { background: #1a1a1a; color: white; text-align: center; padding: 20px; }
