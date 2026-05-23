@@ -263,24 +263,73 @@ a {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 28px rgba(31, 41, 51, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: var(--cat-color, var(--primary));
 }
 
 .category-card.active {
-    border-color: rgba(197, 150, 74, 0.65);
-    background: #fffaf0;
+    border-color: color-mix(in srgb, var(--cat-color, var(--gold)) 48%, var(--line));
+    background: color-mix(in srgb, var(--cat-soft, #fffaf0) 82%, #ffffff);
 }
 
 .category-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--sage);
-    color: var(--primary);
-    font-weight: 800;
+    background: var(--cat-soft, var(--sage));
+    color: var(--cat-color, var(--primary));
     margin-bottom: 18px;
+}
+
+.category-icon svg {
+    width: 34px;
+    height: 34px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.category-health {
+    --cat-color: #2f7d5c;
+    --cat-soft: #e8f4ee;
+}
+
+.category-faith {
+    --cat-color: #b27a24;
+    --cat-soft: #fff2d7;
+}
+
+.category-finance {
+    --cat-color: #2f5f79;
+    --cat-soft: #e4f0f6;
+}
+
+.category-ai {
+    --cat-color: #5b5fc7;
+    --cat-soft: #ececff;
+}
+
+.category-home {
+    --cat-color: #b56545;
+    --cat-soft: #f8e9e2;
+}
+
+.category-routine {
+    --cat-color: #435a4a;
+    --cat-soft: #e9eee9;
 }
 
 .category-card h3 {
