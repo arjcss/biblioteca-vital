@@ -3,40 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quando o Corpo Grita - Livro de Antonio Rosado Jr sobre autoconhecimento e equilíbrio">
-    <title>Quando o Corpo Grita | Antonio Rosado Jr</title>
+    <meta name="description" content="Biblioteca Vital reúne livros digitais e impressos sobre saúde, fé, finanças, inteligência artificial, utilidades domésticas e vida prática.">
+    <title>Biblioteca Vital | Livros para vida prática</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="brand">Biblioteca<span>Vital</span></a>
+            <nav class="nav-links" aria-label="Navegação principal">
+                <a href="#livros">Livros</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#projeto">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Coleção autoral em crescimento</span>
+                    <h1>Livros para entender melhor o corpo, a mente, a fé, o dinheiro, a tecnologia e a casa.</h1>
+                    <p>A Biblioteca Vital reúne obras digitais e impressas criadas para quem busca clareza, orientação prática e reflexão em diferentes áreas da vida.</p>
+                    <div class="hero-actions">
+                        <a href="#livros" class="btn btn-primary">Ver livros disponíveis</a>
+                        <a href="#categorias" class="btn btn-secondary">Explorar categorias</a>
+                    </div>
+                </div>
+
+                <a href="#quando-o-corpo-grita" class="hero-feature" aria-label="Ir para o livro Quando o Corpo Grita">
+                    <img src="images/quando-o-corpo-grita-cover.png" alt="Capa do livro Quando o Corpo Grita">
+                    <div>
+                        <span>Livro em destaque</span>
+                        <strong>Quando o Corpo Grita</strong>
+                        <small>Saúde e autoconhecimento</small>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container intro-panel">
+                <h2>Uma biblioteca para vida real</h2>
+                <p>Os próximos livros da Biblioteca Vital vão atravessar temas diferentes, mas com a mesma intenção: transformar assuntos importantes em leitura clara, útil e aplicável.</p>
+                <p>Saúde, fé, finanças, inteligência artificial, utilidades domésticas e rotina entram aqui como áreas conectadas pela mesma pergunta: como viver e decidir melhor no dia a dia?</p>
+            </div>
+        </section>
+
+        <section class="categories-section" id="categorias">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Quando o Corpo Grita</h1>
-                    <p class="hero-subtitle">Entendendo os sinais que você ignora</p>
+                <div class="section-heading">
+                    <span class="eyebrow">Próximas áreas da biblioteca</span>
+                    <h2>Escolha por tema</h2>
+                    <p>Algumas categorias já começam com livro disponível. Outras serão preenchidas conforme novos títulos forem lançados.</p>
+                </div>
+
+                <div class="category-grid">
+                    <article class="category-card active">
+                        <span class="category-icon">+</span>
+                        <h3>Saúde e Autoconhecimento</h3>
+                        <p>Corpo, emoções, sinais físicos, hábitos, ansiedade cotidiana, sono e bem-estar prático.</p>
+                        <a href="#quando-o-corpo-grita">Ver livro disponível</a>
+                    </article>
+
+                    <article class="category-card">
+                        <span class="category-icon">†</span>
+                        <h3>Fé e Espiritualidade</h3>
+                        <p>Reflexões, devocionais, propósito, fortalecimento emocional e vida com Deus no cotidiano.</p>
+                        <small>Em breve</small>
+                    </article>
+
+                    <article class="category-card">
+                        <span class="category-icon">$</span>
+                        <h3>Finanças Pessoais</h3>
+                        <p>Organização financeira, dívidas, orçamento, renda extra e decisões mais conscientes com dinheiro.</p>
+                        <small>Em breve</small>
+                    </article>
+
+                    <article class="category-card">
+                        <span class="category-icon">IA</span>
+                        <h3>Inteligência Artificial</h3>
+                        <p>Guias práticos para usar IA em produtividade, negócios, estudos, criação e rotina profissional.</p>
+                        <small>Em breve</small>
+                    </article>
+
+                    <article class="category-card">
+                        <span class="category-icon">⌂</span>
+                        <h3>Utilidades Domésticas</h3>
+                        <p>Organização da casa, economia doméstica, limpeza, cozinha, rotina familiar e soluções simples.</p>
+                        <small>Em breve</small>
+                    </article>
+
+                    <article class="category-card">
+                        <span class="category-icon">✓</span>
+                        <h3>Produtividade e Rotina</h3>
+                        <p>Tempo, disciplina, planejamento, foco, hábitos e pequenos sistemas para a vida prática.</p>
+                        <small>Em breve</small>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section class="book-section">
+        <section class="books-section" id="livros">
             <div class="container">
-                <div class="book-grid">
+                <div class="section-heading">
+                    <span class="eyebrow">Disponível agora</span>
+                    <h2>Livro em destaque</h2>
+                </div>
+
+                <article class="book-spotlight" id="quando-o-corpo-grita">
                     <div class="book-cover-wrapper">
-                        <img src="images/quando-o-corpo-grita-cover.png" 
-                             alt="Capa do livro Quando o Corpo Grita" 
-                             class="book-cover">
+                        <img src="images/quando-o-corpo-grita-cover.png" alt="Capa do livro Quando o Corpo Grita" class="book-cover">
                     </div>
-                    
+
                     <div class="book-content">
-                        <p class="book-description">
-                            Uma obra sobre autoconhecimento que explora a conexão entre sintomas físicos e desequilíbrios emocionais. 
-                        </p>
-                        <p class="book-description">
-                            O livro apresenta um caminho prático para reconhecer padrões, identificar causas e restaurar o equilíbrio através de pequenas mudanças conscientes.
-                        </p>
+                        <span class="book-tag">Saúde e Autoconhecimento</span>
+                        <h2>Quando o Corpo Grita</h2>
+                        <p class="book-subtitle">Entendendo os sinais que você ignora</p>
+                        <p>Uma obra sobre autoconhecimento que explora a conexão entre sintomas físicos e desequilíbrios emocionais.</p>
+                        <p>O livro apresenta um caminho prático para reconhecer padrões, identificar causas e restaurar o equilíbrio através de pequenas mudanças conscientes.</p>
 
                         <div class="book-info">
                             <div class="info-item">
@@ -49,30 +138,32 @@
                             </div>
                         </div>
 
-                        <a href="https://www.amazon.com.br/dp/B0GXCLPFJ3" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           class="btn-buy">
+                        <a href="https://www.amazon.com.br/dp/B0GXCLPFJ3" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                             Comprar na Amazon
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <section class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <h2>Sobre o autor</h2>
-                    <p>Antonio Rosado Jr escreve sobre temas que conectam reflexão pessoal e decisões práticas do dia a dia.</p>
+        <section class="about-section" id="projeto">
+            <div class="container about-grid">
+                <div>
+                    <span class="eyebrow">Sobre o projeto</span>
+                    <h2>Por que Biblioteca Vital?</h2>
+                </div>
+                <div>
+                    <p>A Biblioteca Vital nasce para reunir livros autorais de Antonio Rosado Jr em uma coleção ampla, prática e progressiva.</p>
+                    <p>A proposta é simples: cada obra deve ajudar o leitor a olhar para uma área da vida com mais clareza, seja o corpo, a fé, as finanças, a tecnologia, a casa ou a rotina.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Antonio Rosado Jr</p>
+        <div class="container footer-inner">
+            <strong>Biblioteca Vital</strong>
+            <p>&copy; 2026 Antonio Rosado Jr. Livros para vida prática.</p>
         </div>
     </footer>
 </body>
